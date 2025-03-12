@@ -5,7 +5,7 @@ import { ExternalLink } from "lucide-react";
 import { formatDate } from "@/lib/utils";
 
 // You'll need to get a YouTube Data API key from Google Cloud Console
-const API_KEY = "AIzaSyDQOddRZFCCtfcFqC6f8ykGzhjzO2wC44I";
+const API_KEY = process.env.NEXT_PUBLIC_YT_API_KEY;
 const CHANNEL_ID = "ashkibaat99";
 
 export default function YTChannelVideos() {

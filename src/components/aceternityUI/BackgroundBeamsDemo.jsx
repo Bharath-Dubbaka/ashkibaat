@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 export function BackgroundBeamsDemo({ title }) {
    return (
-      <div className="min-h-screen w-full rounded-md bg-neutral-50 relative flex flex-col items-center justify-center antialiased">
+      <div className="min-h-screen w-full rounded-md bg-neutral-50 relative flex flex-col items-center justify-center antialiased dotted-pattern">
          <div className="max-w-2xl mx-auto p-4">
             <h1 className="relative z-10 text-lg md:text-7xl  bg-clip-text text-teal-900 text-center font-sans font-bold">
                Join the waitlist for {title}
@@ -20,11 +20,11 @@ export function BackgroundBeamsDemo({ title }) {
             </p>
             <input
                type="text"
-               placeholder="hi@manuarora.in"
-               className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-50 placeholder:text-neutral-700"
+               placeholder="hi@cmonashh.in"
+               className="h-10 pl-4 rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-50 placeholder:text-neutral-700"
             />
          </div>
-         <BackgroundBeams />
+         {/* <BackgroundBeams /> */}
       </div>
    );
 }

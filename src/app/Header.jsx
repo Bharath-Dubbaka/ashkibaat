@@ -88,21 +88,17 @@ const Header = () => {
 
                {/* Desktop Navigation */}
                <nav className="hidden md:flex items-center space-x-8">
-                  {[
-                     "Merch",
-                     "Podcast",
-                     "Poll",
-                     "Contact",
-                     "Partners",
-                  ].map((item) => (
-                     <Link
-                        key={item}
-                        href={`/${item.toLowerCase()}`}
-                        className="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200 hover:scale-105 transform"
-                     >
-                        {item}
-                     </Link>
-                  ))}
+                  {["Merch", "Contact", "Partners", "Podcast", "Polls"].map(
+                     (item) => (
+                        <Link
+                           key={item}
+                           href={`/${item.toLowerCase()}`}
+                           className="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200 hover:scale-105 transform"
+                        >
+                           {item}
+                        </Link>
+                     )
+                  )}
                </nav>
 
                {/* Mobile Menu Button */}
@@ -140,23 +136,18 @@ const Header = () => {
          {/* Mobile Menu Dropdown */}
          {mobileMenuOpen && (
             <nav className="md:hidden bg-white border-t py-4 px-4 shadow-lg">
-               {[
-                  "Merch",
-                  "Podcast",
-                  "Poll",
-                  "About",
-                  "Contact",
-                  "Partners",
-               ].map((item) => (
-                  <Link
-                     key={item}
-                     href={`/${item.toLowerCase()}`}
-                     className="block py-3 px-4 text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200 border-b border-gray-100"
-                     onClick={() => setMobileMenuOpen(false)}
-                  >
-                     {item}
-                  </Link>
-               ))}
+               {["Merch", "Contact", "Partners", "Polls", "Podcast"].map(
+                  (item) => (
+                     <Link
+                        key={item}
+                        href={`/${item.toLowerCase()}`}
+                        className="block py-3 px-4 text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200 border-b border-gray-100"
+                        onClick={() => setMobileMenuOpen(false)}
+                     >
+                        {item}
+                     </Link>
+                  )
+               )}
             </nav>
          )}
       </header>

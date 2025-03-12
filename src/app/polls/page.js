@@ -1,7 +1,7 @@
 import { BackgroundBeamsDemo } from "@/components/aceternityUI/BackgroundBeamsDemo";
 import React from "react";
 
-function Poll() {
+function Polls() {
    return (
       <div>
          <BackgroundBeamsDemo title={"Polls and Predictions"} />
@@ -9,4 +9,4 @@ function Poll() {
    );
 }
 
-export default Poll;
+export default Polls;

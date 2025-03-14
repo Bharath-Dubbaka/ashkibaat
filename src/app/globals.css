@@ -85,3 +85,29 @@ gradient-text {
    mix-blend-mode: screen; /* Use screen blend mode for the glow effect */
    pointer-events: none; /* Make the glow layer non-interactive */
 }
+
+.cricket-pattern {
+   background-image: radial-gradient(
+         circle at center,
+         transparent 0%,
+         transparent 20%,
+         rgba(255, 234, 0, 0) 40%
+      ),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='%23374151' fill-opacity='0.2'%3E%3Cpath d='M20 5c-2 0-4 1-5 3l-2 4h4l1-2c1-1 2-1 3 0l1 2h4l-2-4c-1-2-3-3-5-3zm5 15c1 0 2-1 2-2s-1-2-2-2-2 1-2 2 1 2 2 2zm-10 0c1 0 2-1 2-2s-1-2-2-2-2 1-2 2 1 2 2 2zm5-5c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5zm0 2c2 0 3 1 3 3s-1 3-3 3-3-1-3-3 1-3 3-3z'/%3E%3Cpath d='M25 25l-5 5-5-5h10z'/%3E%3C/g%3E%3C/svg%3E");
+   background-size: 100% 100%, 40px 40px;
+   background-repeat: no-repeat, repeat;
+   position: relative;
+}
+
+.cricket-pattern::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath fill='%23FFD700' fill-opacity='0.15' d='M30 5c-3 0-6 1-8 4l-3 6h6l2-3c1-2 3-2 4 0l2 3h6l-3-6c-2-3-5-4-8-4zm15 30c2 0 3-2 3-3s-1-3-3-3-3 1-3 3 1 3 3 3zm-30 0c2 0 3-2 3-3s-1-3-3-3-3 1-3 3 1 3 3 3zm15-10c-5 0-10 5-10 10s5 10 10 10 10-5 10-10-5-10-10-10zm0 5c3 0 5 2 5 5s-2 5-5 5-5-2-5-5 2-5 5-5z'/%3E%3C/svg%3E");
+   background-size: 60px 60px;
+   mix-blend-mode: multiply;
+   pointer-events: none;
+}

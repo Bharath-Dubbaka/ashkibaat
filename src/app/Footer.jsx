@@ -4,6 +4,7 @@ import {
    IconBrandFacebook,
    IconBrandInstagram,
    IconBrandTwitter,
+   IconBrandX,
    IconBrandYoutube,
 } from "@tabler/icons-react";
 
@@ -172,10 +173,18 @@ const Footer = () => {
                <div>
                   <h5 className="font-semibold mb-4">Follow Us</h5>
                   <div className="flex space-x-4">
-                     <IconBrandTwitter className="w-6 h-6 hover:text-primary-600 cursor-pointer" />
-                     <IconBrandFacebook className="w-6 h-6 hover:text-primary-600 cursor-pointer" />
-                     <IconBrandInstagram className="w-6 h-6 hover:text-primary-600 cursor-pointer" />
-                     <IconBrandYoutube className="w-6 h-6 hover:text-primary-600 cursor-pointer" />
+                     <Link href="https://x.com/ashwinravi99">
+                        <IconBrandX className="w-6 h-6 hover:text-primary-600 cursor-pointer" />
+                     </Link>
+                     <Link href="https://www.facebook.com/AshwinRaviOfficial/">
+                        <IconBrandFacebook className="w-6 h-6 hover:text-primary-600 cursor-pointer" />
+                     </Link>
+                     <Link href="https://instagram.com/rashwin99">
+                        <IconBrandInstagram className="w-6 h-6 hover:text-primary-600 cursor-pointer" />
+                     </Link>
+                     <Link href="https://youtube.com/@ashkibaat99">
+                        <IconBrandYoutube className="w-6 h-6 hover:text-primary-600 cursor-pointer" />
+                     </Link>
                   </div>
                </div>
             </div>

@@ -55,7 +55,7 @@ export default function MerchandisePage() {
          sizes: ["S", "M", "L", "XL"],
       },
       {
-         id: 3,
+         id: 6,
          name: "BARCODE PULLOVER HOODIE",
          price: 4400.0,
          images: ["/merch/whiteHoodie.jpg"],
@@ -64,7 +64,7 @@ export default function MerchandisePage() {
          sizes: ["S", "M", "L", "XL", "XXL"],
       },
       {
-         id: 4,
+         id: 7,
          name: "CREWNECK SOLID",
          price: 4000.0,
          images: ["/merch/Hoodie.jpg"],
@@ -73,7 +73,7 @@ export default function MerchandisePage() {
          sizes: ["S", "M", "L", "XL"],
       },
       {
-         id: 5,
+         id: 8,
          name: "ALIEN CREWNECK",
          price: 4000.0,
          images: ["/merch/hoodieTwo.jpg"],

@@ -83,7 +83,7 @@ export default function YTChannelVideos() {
    }
 
    return (
-      <div className="w-full  px-24 dotted-pattern mb-4 pb-4 text-teal-900">
+      <div className="w-full px-6 md:px-24 dotted-pattern mb-4 pb-4 text-teal-900">
          <h2 className="text-4xl font-extrabold pt-8 mb-8 text-center text-teal-900 underline">
             LATEST, ASH KI-BAAT :
          </h2>

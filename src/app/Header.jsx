@@ -88,7 +88,7 @@ const Header = () => {
 
                {/* Desktop Navigation */}
                <nav className="hidden md:flex items-center space-x-8">
-                  {["Contact", "Merch", "Partners", "Podcast", "Polls"].map(
+                  {["Contact", "Merch", "Partners", "Corporate", "Cricketer"].map(
                      (item) => (
                         <Link
                            key={item}
@@ -136,7 +136,7 @@ const Header = () => {
          {/* Mobile Menu Dropdown */}
          {mobileMenuOpen && (
             <nav className="md:hidden bg-white border-t py-4 px-4 shadow-lg">
-               {["Contact", "Merch", "Partners", "Polls", "Podcast"].map(
+               {["Contact", "Merch", "Partners", "Corporate", "Cricketer"].map(
                   (item) => (
                      <Link
                         key={item}
